@@ -1,8 +1,10 @@
+import { vistaRanking } from "./vistaRanking"
+
 export const home = {
     template: 
     `
     <!DOCTYPE html>
-<html lang="es">
+    <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,12 +54,14 @@ export const home = {
         <p>Amb la fletxa avall pots girar la peça</p>
         <p>'<strong>Ñ</strong>' per canviar la peça actual per la peça que està a punt de sortir (que pots veure a la columna de la dreta)</p>
         <p>Al final de la partida podràs desar la teva puntuació, i verue el ranking de jugadors</p>
-        <button class="btn btn-success fs-1 mt-5">JUGAR</button>
+        <button id="juego" class="btn btn-success fs-1 mt-5">JUGAR</button>
 				<hr>
       </div>
     `,
 
     script: () => {
-
+        document.querySelector('#juego').addEventListener('click', () =>{
+        document.querySelector('main').innerHTML = vistaRanking.template
+        })
     }
 }
