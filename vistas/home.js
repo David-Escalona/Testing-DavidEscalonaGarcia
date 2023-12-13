@@ -1,4 +1,4 @@
-import { vistaRanking } from "./vistaRanking"
+import { vistaRanking } from "./vistaRanking.js"
 
 export const home = {
     template: 
@@ -54,7 +54,7 @@ export const home = {
         <p>Amb la fletxa avall pots girar la peça</p>
         <p>'<strong>Ñ</strong>' per canviar la peça actual per la peça que està a punt de sortir (que pots veure a la columna de la dreta)</p>
         <p>Al final de la partida podràs desar la teva puntuació, i verue el ranking de jugadors</p>
-        <button id="juego" class="btn btn-success fs-1 mt-5">JUGAR</button>
+        <button id="juego" class="btn btn-success fs-1 mt-5">RANKING</button>
 				<hr>
       </div>
     `,

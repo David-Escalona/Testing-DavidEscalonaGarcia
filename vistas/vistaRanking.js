@@ -126,10 +126,15 @@ export const vistaRanking = {
 						<tfoot></tfoot>
 					</table>
 				</div>
+                <div class="justify-content-center text-center mb-5 pb-5">
+                <button id="partida" class="btn btn-success fs-1 mt-5">JUGAR</button>
+                </div>
 			</div>
     `,
 
     script: () => {
-
-    }
+        document.querySelector('#partida').addEventListener('click', () =>{
+        document.querySelector('main').innerHTML = juego.template
+        }
+    )}
 }
